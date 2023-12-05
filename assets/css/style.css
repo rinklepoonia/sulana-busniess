@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none !important;
+    text-decoration: none !important;
+}
+
+.container {
+    max-width: 1320px !important;
+}
+
+:root {
+    /* font-weight */
+    --fs-2xl: 48px;
+    --fs-xl: 36px;
+    --fs-lg: 24px;
+    --fs-md: 20px;
+    --fs-sm: 18px;
+    /* colors */
+    --clr-red: #F4241E;
+    --clr-black: #000;
+    --clr-white: #FFF;
+    --clr-yellow: #F6E300;
+    --clr-skyblue: #8ADDFD;
+}
+
+/*======================nav-header===================*/
+.bg-1 {
+    background: var(--clr-yellow);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.links {
+    color: var(--clr-black);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    line-height: normal;
+}
+
+.links:hover {
+    color: var(--clr-red);
+}
+
+.navbtn {
+    color: var(--clr-red);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-md);
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 10px;
+    background: var(--clr-white);
+    padding: 12px 32px;
+    border: none;
+}
+
+.navbtn:hover {
+    color: var(--clr-black);
+}
+
+.py-11 {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.menulist.show {
+    right: 0 !important;
+}
+
+@media(max-width:992px) {
+    .overFlowHideen {
+        overflow: hidden;
+    }
+
+    .menulist {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: var(--clr-yellow);
+        transition: all 200ms linear;
+        z-index: 1;
+
+    }
+
+    .menuIcon {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .menuIcon>span {
+        width: 100%;
+        height: 4px;
+        background-color: var(--clr-black);
+    }
+
+    ul.menulist.show {
+        right: 0;
+    }
+
+    .position-fix {
+        position: fixed;
+        left: 0;
+        right: 1px;
+        z-index: 2;
+    }
+
+}
+
+/*====================section-1=================*/
+.heading-1 {
+    color: var(--clr-black);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.burger-1 {
+    display: none;
+}
+
+.burger-2 {
+    display: none;
+}
+
+.burger-3 {
+    display: none;
+}
+
+.burger-4 {
+    display: none;
+}
+
+.burger-5 {
+    display: none;
+}
+
+.burger-6 {
+    display: none;
+}
+
+.burger-7 {
+    display: none;
+}
+
+.burger-8 {
+    display: none;
+}
+
+/*================================section-2==============================*/
+.bg-2 {
+    background: #FFF03F;
+}
+
+.heading-2 {
+    color: var(--clr-black);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-2xl);
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text-2 {
+
+    color: var(--clr-black);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-sm);
+    font-weight: 400;
+    line-height: 180%;
+}
+
+.btn-2 {
+    color: var(--clr-white);
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--fs-md);
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 10px;
+    background: var(--clr-red);
+    padding: 15px 32px;
+    border: none;
+}
+
+.mx-w-591 {
+    max-width: 591px;
+}
+
+/*================================section-3==================================*/
+.py-90 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/*================================section-4===================================*/
+.bg-4 {
+    background: var(--clr-red);
+}
+
+.py-30-50 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.heading-4 {
+    color: var(--clr-white);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-2xl);
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 24px;
+}
+
+.text-4 {
+    color: var(--clr-white);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-sm);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    opacity: 0.8;
+}
+
+/*============================timeline=============================*/
+.py-50-90 {
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+.heading-5 {
+    color: var(--clr-black);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-2xl);
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text-5 {
+    max-width: 522px;
+    color: var(--clr-black);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-lg);
+    font-weight: 400;
+    line-height: normal;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--clr-red);
+    top: 0;
+    bottom: 27%;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container-t {
+    padding: 10px 23px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container-t::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: var(--clr-white);
+    top: -1px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.right::after {
+    left: -13px;
+}
+
+.content {
+    position: relative;
+    border-radius: 10px;
+    background: var(--clr-white);
+    padding: 27px 17px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+/*=============================section-6==================================*/
+.text-6 {
+    color: var(--clr-black);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text6 {
+    color: var(--clr-black);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-sm);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+.burger-9 {
+    display: none;
+}
+
+.burger-10 {
+    display: none;
+}
+
+.burger-11 {
+    display: none;
+}
+
+.burger-12 {
+    display: none;
+}
+
+.burger-13 {
+    display: none;
+}
+
+.burger-14 {
+    display: none;
+}
+
+.burger-15 {
+    display: none;
+}
+
+.burger-16 {
+    display: none;
+}
+
+@media (min-width:992px) {
+    .burger-1 {
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        display: block;
+    }
+
+    .burger-2 {
+        position: absolute;
+        top: 40px;
+        left: 18%;
+        display: block;
+    }
+
+    .burger-3 {
+        position: absolute;
+        bottom: 22%;
+        left: 5px;
+        display: block;
+    }
+
+    .burger-4 {
+        position: absolute;
+        bottom: 22%;
+        left: 16%;
+        display: block;
+    }
+
+    .burger-5 {
+        position: absolute;
+        top: 64px;
+        right: 18%;
+        display: block;
+    }
+
+    .burger-6 {
+        position: absolute;
+        top: -8px;
+        right: 40px;
+        display: block;
+    }
+
+    .burger-7 {
+        position: absolute;
+        bottom: 17%;
+        right: 11%;
+        display: block;
+    }
+
+    .burger-8 {
+        position: absolute;
+        bottom: 30%;
+        right: 10px;
+        display: block;
+    }
+
+    .burger-9 {
+        position: absolute;
+        top: 2%;
+        left: 18%;
+        display: block;
+    }
+
+    .burger-10 {
+        position: absolute;
+        top: 33%;
+        left: 9%;
+        display: block;
+    }
+
+    .burger-11 {
+        position: absolute;
+        bottom: 32%;
+        left: 28%;
+        display: block;
+    }
+
+    .burger-12 {
+        position: absolute;
+        bottom: 14%;
+        left: 4%;
+        display: block;
+    }
+
+    .burger-13 {
+        position: absolute;
+        top: 9%;
+        right: 6%;
+        display: block;
+    }
+
+    .burger-14 {
+        position: absolute;
+        top: 25%;
+        right: 25%;
+        display: block;
+    }
+
+    .burger-15 {
+        position: absolute;
+        bottom: 10%;
+        right: 24%;
+        display: block;
+    }
+
+    .burger-16 {
+        position: absolute;
+        bottom: 14%;
+        right: 6%;
+        display: block;
+    }
+}
+
+/*==========================accordion========================*/
+.accordion-button {
+    color: var(--clr-black);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    line-height: normal;
+}
+
+.accordion-body {
+    color: var(--clr-black);
+    font-family: ' Poppins', sans-serif;
+    font-size: var(--fs-sm);
+    font-weight: 400;
+    line-height: 180%;
+    max-width: 866px;
+    padding-top: 0;
+}
+
+.accordion-item {
+    border-color: transparent !important;
+    background: #FFF03F;
+}
+
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+    background: #FFF03F;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    box-shadow: none;
+}
+
+.container-2 {
+    max-width: 922px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+@media (max-width:1200px) {
+    .mb-sm-15 {
+        margin-bottom: 15px;
+    }
+
+    .pt-sm-35 {
+        padding-top: 35px;
+    }
+}
+
+@media (max-width:500px) {
+    :root {
+        --fs-2xl: 30px;
+        --fs-xl: 23px;
+    }
+}
+
+@media (max-width:992px) {
+    :root {
+        --fs-2xl: 30px;
+    }
+}
+
+/*========================timeline====================== */
+@media (max-width:768px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container-t {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .left::after,
+    .right::after {
+        left: 19px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    .w-small-100 {
+        width: 100%;
+    }
+}
+
+
+
+@media(min-width:385px) and (max-width:503px) {
+    .timeline::after {
+        bottom: 28%;
+    }
+}
