@@ -11,10 +11,14 @@
 
 .container {
     max-width: 1320px !important;
+    padding-right: 12px !important;
+    padding-left: 12px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
 }
 
 :root {
-    /* font-weight */
+    /* font-size */
     --fs-2xl: 48px;
     --fs-xl: 36px;
     --fs-lg: 24px;
@@ -122,6 +126,7 @@
         left: 0;
         right: 1px;
         z-index: 2;
+        background-color: var(--clr-yellow);
     }
 
 }
@@ -139,6 +144,10 @@
 
 .burger-1 {
     display: none;
+}
+
+.max-w-800 {
+    max-width: 800px;
 }
 
 .burger-2 {
@@ -377,15 +386,15 @@
 @media (min-width:992px) {
     .burger-1 {
         position: absolute;
-        top: 30px;
-        left: 50px;
+        top: 20px;
+        left: 60px;
         display: block;
     }
 
     .burger-2 {
         position: absolute;
         top: 40px;
-        left: 18%;
+        left: 22%;
         display: block;
     }
 
@@ -398,29 +407,29 @@
 
     .burger-4 {
         position: absolute;
-        bottom: 22%;
-        left: 16%;
+        bottom: 20%;
+        left: 17%;
         display: block;
     }
 
     .burger-5 {
         position: absolute;
         top: 64px;
-        right: 18%;
+        right: 25%;
         display: block;
     }
 
     .burger-6 {
         position: absolute;
-        top: -8px;
-        right: 40px;
+        top: 0px;
+        right: 80px;
         display: block;
     }
 
     .burger-7 {
         position: absolute;
-        bottom: 17%;
-        right: 11%;
+        bottom: 13%;
+        right: 19%;
         display: block;
     }
 
@@ -524,6 +533,19 @@
 .accordion-button:not(.collapsed) {
     color: var(--clr-black);
     box-shadow: none;
+}
+
+/* .accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+    font-weight: 600;
+} */
+
+.accordion-button.collapsed::after {
+    background-image: url(../images/icon-1.svg);
+}
+
+.accordion-button::after {
+    background-image: url(../images/icon-2.svg) !important;
 }
 
 .container-2 {
